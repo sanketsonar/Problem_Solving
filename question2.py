@@ -1,21 +1,22 @@
-# program accept one number and display square pattern of that size
-#   *   *   *  
-#   *   *   *
-#   *   *   *
-#
+# Program which contain ChkNum() which accept one parameter as a number if the number is even then it should display even/odd number on console check odd even number
 
+def CheckNum(no):
+    if(no<0):
+        print("Enter valid number")
+        return
+    if(no==0):
+        print( no, " is Neutral ") 
+        return   
+    if((no%2) == 0):
+        print( no, " is even no ")
+    else:
+        print( no, " is odd no ")
 
-def SqPattern(no):
-    
-    for i in range(no):
-        for j in range(no):
-            print(" * ", end = " ")
-        print(" ")
-          
 def main():
-    print("Enter size of Square pattern: ")
-    Size = int(input())
-    SqPattern(Size)
+    print(" Enter a number ")
+    No = int(input())
+
+    CheckNum(No)
 
 if __name__ == "__main__":
     main()

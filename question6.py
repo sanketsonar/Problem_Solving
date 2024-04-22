@@ -1,20 +1,19 @@
-# take user input and print inverse right angle triangle pattern
-# * * * *
-# * * *
-# * *
-# *
+# program to check number is positive negative or zero
 
-def PrintPattern(no):
-    for i in range (no):
-        for j in range (no):
-            print(" * ", end = " ")
-        no = no - 1
-        print(" ")
+def CheckNum(no):
+    if(no == 0):
+        print(" Number is 0 ")
+        return
+    if(no < 0):
+        print(" Negative Number")
+    else:
+        print(" Positive Number")
 
 def main():
-    Size = int(input(" Enter size of a pattern: "))
+    print(" Enter Number: ")
+    Value = int(input())
 
-    PrintPattern(Size)
+    CheckNum(Value)
 
-if __name__ == "__main__":
+if __name__== "__main__":
     main()

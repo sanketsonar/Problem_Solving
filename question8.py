@@ -1,21 +1,13 @@
-# print pattern by accepting number
-# 1
-# 1   2
-# 1   2   3
-# 1   2   3   4
+# program accept number from user and print that much number of *
 
-def pattern(no):
-    i = 1
-    while(i<=no):
-        for j in range(1,i+1):
-            print(j, end =" ")
-        print(" ")
-        i = i + 1
-       
+def printStar(No):
+    for i in range(No):
+        print(" * ", end = " ")
+
+
 def main():
-    print("Enter number: ", end = "\t")
-    No = int(input())
-    pattern(No)
+    No = int(input(" Enter number of star: "))
+    printStar(No)
 
 if __name__=="__main__":
     main()

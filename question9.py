@@ -1,19 +1,18 @@
-# program to find digits in a number 
-
-def Digit(no):
-    count = 0
-    i = 1
-    while (no > 0):
-        no = int(no / 10)
-        count = count + 1
-        i = i + 1
-    return count
+# program to display first 10 even numbers 
 
 def main():
-    print("Enter a number  :")
-    no = int(input())
-    Result = Digit(no)
-    print("Number of digits in ",no," are :", Result)
+    j = 2
+    i = 0
+    while (i<10):
+        print(j, end =" ")
+        j = j + 2
+        i = i + 1
 
-if __name__=="__main__":
+    print("")
+    
+    for i in range(2,22,2):
+        print(i, end = " ")
+
+
+if __name__ == "__main__":
     main()

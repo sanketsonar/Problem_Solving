@@ -1,17 +1,15 @@
-# program to give factorial
+# Program which contain Add() which accept two number from number return Addition
 
-def Factorial(no):
-    fact = 1
-    for i in range(no):
-        fact = fact + (fact*i)
-    return fact
+def Addition(No1, No2):
+    Ans = No1 + No2
+    return Ans
 
 def main():
-    print("Enter Number for Factorial: ")
-    No = int(input())
+    print(" Enter Two numbers for addition: ")
+    Value1 = int(input())
+    Value2 = int(input())
 
-    Res = Factorial(No)
-    print("Factorial of ", No, " is :", Res)
+    print(" Addition of", Value1, " and ", Value2, " is :", Addition(Value1,Value2))
 
 if __name__ == "__main__":
     main()
