@@ -1,21 +1,18 @@
-# check if number is divisible by 5
+# print pattern by accepting number
+# 1   1   1
+# 2   2   2
+# 3   3   3
 
-def CheckNum(no):
-    if(no <= 0):
-        print(" Enter valid number")
-        return
-
-    if((no%5) == 0):
-        print(no," is Divisible by 5")
-    else:
-        print(no," is not Divisible by 5")
-       
+def pattern(no):
+    for i in range(1,no+1):
+        for j in range(1,no+1):
+            print(j, end = " ")
+        print(" ")
 
 def main():
-    print(" Enter Number: ")
-    Value = int(input())
-
-    CheckNum(Value)
+    print("Enter number: ")
+    No = int(input())
+    pattern(No)
 
 if __name__ == "__main__":
     main()

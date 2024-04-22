@@ -1,10 +1,19 @@
-# program to print Radhe 5 times
+# program to find addition of factors of a given number
+
+
+def FactAdd(no): 
+    sum = 0
+    for i in range(1,no): 
+        if((no % i)==0):
+            sum = sum + i
+    return sum
+
 
 def main():
-    i = 0
-    while(i<5):
-        print(" Radhe ")
-        i = i + 1
+    print("Enter a number :")
+    No = int(input())
+    Res = FactAdd(No)
+    print("sum of its factor is", Res)
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
